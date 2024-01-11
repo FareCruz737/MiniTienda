@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+header{
+display: flex;
+background-color:  #f39c12 ;
+box-shadow: 1px 2px 5px black;
+}
+.present-mini{
+width: 100rem;
+margin: 10px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.peque{
+display: flex;
+align-items: center;
+}
+.peque > a {
+margin: 10px 20px;
+text-decoration: none;
+color: black;
+font-size: 16px;
+font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selec{
+width: 100%;
+padding: 15px;
+background-color:  #99a3a4 ;
+box-shadow: 1px 1px 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.selec > a{
+margin: 0px 20px;
+text-decoration: none;
+color: black;
+font-size: 15px;
+font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+
+.alimetos  > h2 {
+margin: 30px;
+margin-top: 130px;
+text-align: center;
+font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mover{
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.mover > div{
+
+width: 90px;
+height: 5px;
+background-color: black;
+}
+
+.componentes{
+display: grid;
+grid-template-columns: repeat(3, 220px); 
+grid-template-rows: auto;
+gap: 30px;
+
+justify-content: center;
+align-items: center;
+}
+
+.More-recomendaciones{
+height: 80px;
+margin: 70px;
+
+background-color:  #f39c12 ;
+border-radius: 20px ;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.More-recomendaciones > a{
+text-decoration: none;
+font-size: 20px;
+font-weight: bolder;
+color: black;
+margin: 0px 30px;
+}
+
+.informar{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.primero,.segundo{
+width: 25rem;
+height: 400px;
+margin: 40PX;
+border-radius: 20px;
+box-shadow: 2px 2px 4px black;
+background-color:  #f39c12 ;
+
+}
+
+.primero > img{
+display: block;
+width: 25rem;
+height: 200px;
+border-radius: 20px 20px 0px 0px;
+}
+
+.primero > h2{
+position: relative;
+bottom: 60px;
+font-size: 35px;
+
+
+margin: 0px 20px;
+}
+.primero > p {
+font-size: 20px;
+font-weight: bold;
+padding: 5px 30px;
+position: relative;
+bottom: 35px;
+}
+.primero > button{
+padding: 20px 10px;
+margin: 0px 30px;
+
+font-weight: bolder;
+font-size: 15px;
+
+border-radius: 25px;
+border: none;
+box-shadow: 1px 1px 5px black;
+position: relative;
+bottom: 20px;
+cursor: pointer;
+}
+
+.segundo > img{
+display: block;
+width: 25rem;
+height: 200px;
+border-radius: 20px 20px 0px 0px;
+}
+
+.segundo> h2{
+position: relative;
+bottom: 60px;
+font-size: 35px;
+
+
+margin: 0px 20px;
+}
+.segundo> p {
+font-size: 20px;
+font-weight: bold;
+padding: 5px 30px;
+position: relative;
+bottom: 35px;
+}
+.segundo > button{
+padding: 20px 10px;
+margin: 0px 30px;
+
+font-weight: bolder;
+font-size: 15px;
+
+border-radius: 25px;
+border: none;
+box-shadow: 1px 1px 5px black;
+position: relative;
+bottom: 20px;
+cursor: pointer;
+}
+
+.Final{
+margin-top: 50px;
+height: 100px;
+background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+background-blend-mode: multiply,multiply;
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: wheat;
+font-size: 25px;
+font-weight: bolder;
 }
