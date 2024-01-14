@@ -9,6 +9,13 @@ import natural from './img/Nature valley.jpg';
 import Natural from './img/Nature valley-2.jpg'; 
 import Img from './img/pexels-fauxels-3184418.jpg'; 
 import img2 from './img/pexels-jane-doan-1099680.jpg'; 
+import persona from './img/001-buyer.png'; 
+import cubierto from './img/002-cutlery.png'; 
+import carrito from './img/001-shopping-cart.png'; 
+import carne from './img/003-meat.png'; 
+import vegetales from './img/002-vegetable.png'; 
+import postres from './img/001-birthday-cake.png'; 
+import casa from './img/004-home.png';
 
 import Comidas from './Componentes/Comida';
 import './Componentes/Styles.css'; 
@@ -21,17 +28,52 @@ function App() {
   <header> 
 <h1 className='present-mini'>Mini Super</h1>
 <div className='peque'>
-<a href='/'>compras</a>
-<a href='/'>Socios</a>
-<a href='/'>Promociones</a>
+<a href='/'>
+<spam>Compras</spam>
+<img src={carrito}/> 
+</a>
+<a href='/'>
+<spam>Cuenta</spam>
+<img  src={persona}/>
+</a>
+<a href='/'>
+<span>Promociones</span>
+<img  src={cubierto}/>
+</a>
 </div>
 </header>
 
+{/* Header */}
+
 <div className='selec'>
-<a href="/">Vegetales</a>
-<a href ="/">Carne</a>
-<a href ="/">Postres</a>
-<a href ="/">Hogar</a>
+
+<section className='selec-2'>
+
+<a href="/">
+<img src={vegetales}/>
+<span>Vegetales</span>
+</a>
+
+<a href ="/">
+<img src={carne}/>
+<span>Carne</span>
+</a>
+
+<a href ="/">
+<img src={postres}/>
+  <span>Postres</span>
+</a>
+<a href ="/">
+<img src={casa}/>
+  <span>Hogar</span>
+  
+</a>
+</section>
+
+<div className='selec-3'>
+
+<input placeholder='Busqueda'></input>
+</div>
 </div>
 
 {/* main */}

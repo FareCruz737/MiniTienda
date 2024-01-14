@@ -18,26 +18,55 @@ display: flex;
 align-items: center;
 }
 .peque > a {
-margin: 10px 20px;
+display: inline-flex;
+margin: 10px 6px;
 text-decoration: none;
 color: black;
-font-size: 16px;
+font-size: 14px;
 font-weight: bolder;
 }
 
+.peque > a > img{
+margin: 0px 10px;
+height: 25px;
+
+}
+
+/* compras,cuenta, promociones  */
+
 .selec{
-width: 100%;
-padding: 15px;
+display: flex;
+/* width: 100%; */
+padding: 10px;
 background-color:  #99a3a4 ;
 box-shadow: 1px 1px 5px;
 }
 
-.selec > a{
-margin: 0px 20px;
+.selec-2 > a{
+margin: 0px 10px;
 text-decoration: none;
 color: black;
 font-size: 15px;
 font-weight: bolder;
+transition-duration: 0.3s;
+}
+
+.selec-2 > a > img {
+height: 25px;
+margin: 0px 10px;
+}
+
+.selec-3{
+display: flex;
+justify-content: flex-end;
+width: 50rem;
+}
+
+.selec-3 > input{
+padding: 5px 30px;
+border-radius: 20px; 
+border: none;
+
 }
 
 
@@ -90,6 +119,7 @@ font-size: 20px;
 font-weight: bolder;
 color: black;
 margin: 0px 30px;
+transition-duration: 0.3s;
 }
 
 .informar{
@@ -106,6 +136,7 @@ margin: 40PX;
 border-radius: 20px;
 box-shadow: 2px 2px 4px black;
 background-color:  #f39c12 ;
+transition-duration: 0.3s;
 
 }
 
@@ -195,4 +226,40 @@ align-items: center;
 color: wheat;
 font-size: 25px;
 font-weight: bolder;
+}
+
+
+/* efectos */
+
+
+.peque > a:hover {
+color: white;
+transition-duration: 0.3s;
+}
+
+.selec-2 > a:hover{
+color: white;
+}
+
+.segundo:hover, .primero:hover {
+transform: scale(1.2);
+}
+
+.segundo > button:hover, .primero > button:hover{
+background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+background-blend-mode: multiply,multiply;
+
+color: white;
+transition-duration: 0.3s;
+}
+
+.More-recomendaciones > a:hover{
+background-color:black;
+padding: 30px;
+font-size: 20px;
+border-radius: 10px;
+
+color:  #fdfefe ;
+/* margin: 0px 30px; */
+
 }
