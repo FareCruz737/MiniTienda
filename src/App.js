@@ -191,8 +191,17 @@ Precios={"$300"}
 
 <footer>
 
-<div className='Final'>
-<p>Gracias por estar aqui</p>
+<div className='Final-1'>
+<a href='/'>Socios</a>
+<a href='/'>Asociados</a>
+<a href='/'>Equipo</a>
+</div>
+
+<div className='final-2'>
+
+ <h3>Redes</h3>
+
+{/* imagenes */}
 
 </div>
 
