@@ -16,6 +16,9 @@ import carne from './img/003-meat.png';
 import vegetales from './img/002-vegetable.png'; 
 import postres from './img/001-birthday-cake.png'; 
 import casa from './img/004-home.png';
+import facebok from './img/002-facebook.png'; 
+import twiter from './img/001-twitter.png'; 
+import instagram from './img/003-instagram.png'; 
 
 import Comidas from './Componentes/Comida';
 import './Componentes/Styles.css'; 
@@ -200,6 +203,10 @@ Precios={"$300"}
 <div className='final-2'>
 
  <h3>Redes</h3>
+
+ <img src={facebok}/>
+ <img src={instagram}/>
+ <img src={twiter}/>
 
 {/* imagenes */}
 
